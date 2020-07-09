@@ -8,10 +8,10 @@ Create a resource group `RNAseq` in the location `East US`.
 
 Create a Ubuntu LTS virtual machine in the `RNAseq` resource group and generate a pair os sss of keys.
 
-az vm create -n RNAseqVM -g RNAseq --image UbuntuLTS --generate-ssh-keys
+`az vm create -n RNAseqVM -g RNAseq --image UbuntuLTS --generate-ssh-keys`
 
 Deploy nextflow using the nextflow-azure deployment template (indicated here as azuredeploy.json)
 
-az deployment group create --name rnaseq --resource-group RNAseq --template-file azuredeploy.json
+`az deployment group create --name rnaseq --resource-group RNAseq --template-file azuredeploy.json`
 
 ## Running the RNAseq Nextflow pipeline on Azure
