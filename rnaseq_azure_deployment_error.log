@@ -1,0 +1,188 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 alfred@Azure:~$ az monitor activity-log list --correlation-id 944847c6-d287-4850-a5e8-9ac390ef920f[\
+  \{\
+    "authorization": \{\
+      "action": "Microsoft.Resources/deployments/validate/action",\
+      "role": null,\
+      "scope": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq"\
+    \},\
+    "caller": "assekagiri@uvri.go.ug",\
+    "category": \{\
+      "localizedValue": "Administrative",\
+      "value": "Administrative"\
+    \},\
+    "channels": "Operation",\
+    "claims": \{\
+      "aio": "AUQAu/8QAAAAgSbNaC/FKJ48t75xQQJem/m+SvsUXin3gxtVsLueqFOFkH3wQwUR2b3JwkiormOCyHG1ME3iJPPjRhcTwW/XLg==",\
+      "altsecid": "1:live.com:000340010D1B0412",\
+      "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",\
+      "appidacr": "2",\
+      "aud": "https://management.core.windows.net/",\
+      "exp": "1594313997",\
+      "groups": "4562bdf9-ab73-4888-ad4f-596eb7500cf4",\
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",\
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd",\
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "live.com",\
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "d6b246f5-23c1-4504-ac46-420bbff96e74",\
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",\
+      "http://schemas.microsoft.com/identity/claims/tenantid": "11b1eccb-02fa-40dd-a055-b55a5836a977",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "assekagiri@uvri.go.ug",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alfred",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "live.com#assekagiri@uvri.go.ug",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "s-zTtz72VaP7QbfAMcVYUWmByCBMrCVRc1X8d6LYTno",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Ssekagiri",\
+      "iat": "1594310097",\
+      "ipaddr": "154.226.38.28",\
+      "iss": "https://sts.windows.net/11b1eccb-02fa-40dd-a055-b55a5836a977/",\
+      "name": "Alfred Ssekagiri",\
+      "nbf": "1594310097",\
+      "puid": "10032000CB6502F3",\
+      "uti": "HhmYS78ww0OuNR7pv_AJAQ",\
+      "ver": "1.0",\
+      "wids": "62e90394-69f5-4237-9190-012177145e10"\
+    \},\
+    "correlationId": "944847c6-d287-4850-a5e8-9ac390ef920f",\
+    "description": "",\
+    "eventDataId": "bdfd94c9-e58d-48c0-b526-4fd83cbd697c",\
+    "eventName": \{\
+      "localizedValue": "End request",\
+      "value": "EndRequest"\
+    \},\
+    "eventTimestamp": "2020-07-09T16:07:27.263597+00:00",\
+    "httpRequest": \{\
+      "clientIpAddress": "23.97.196.161",\
+      "clientRequestId": "372a4ea8-c1fe-11ea-8a20-0a580af4b908",\
+      "method": "POST",\
+      "uri": null\
+    \},\
+    "id": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq/events/bdfd94c9-e58d-48c0-b526-4fd83cbd697c/ticks/637299076472635975",\
+    "level": "Error",\
+    "operationId": "944847c6-d287-4850-a5e8-9ac390ef920f",\
+    "operationName": \{\
+      "localizedValue": "Validate Deployment",\
+      "value": "Microsoft.Resources/deployments/validate/action"\
+    \},\
+    "properties": \{\
+      "eventCategory": "Administrative",\
+      "serviceRequestId": null,\
+      "statusCode": "BadRequest",\
+      "statusMessage": "\{\\"error\\":\{\\"code\\":\\"InvalidTemplateDeployment\\",\\"message\\":\\"The template deployment 'rnaseq' is not valid according to the validation procedure. The tracking id is '944847c6-d287-4850-a5e8-9ac390ef920f'. See inner errors for details.\\",\\"details\\":[\{\\"code\\":\\"InvalidDomainNameLabel\\",\\"message\\":\\"The domain name label rnaseq.eastus.cloudapp.azure.com is invalid. It must conform to the following regular expression: ^[a-z][a-z0-9-]\{1,61\}[a-z0-9]$.\\",\\"details\\":[]\}]\}\}"\
+    \},\
+    "resourceGroup": "RNAseq3",\
+    "resourceGroupName": "RNAseq3",\
+    "resourceId": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq",\
+    "resourceProviderName": \{\
+      "localizedValue": "Microsoft Resources",\
+      "value": "Microsoft.Resources"\
+    \},\
+    "resourceType": \{\
+      "localizedValue": "Microsoft.Resources/deployments",\
+      "value": "Microsoft.Resources/deployments"\
+    \},\
+    "status": \{\
+      "localizedValue": "Failed",\
+      "value": "Failed"\
+    \},\
+    "subStatus": \{\
+      "localizedValue": "Bad Request (HTTP Status Code: 400)",\
+      "value": "BadRequest"\
+    \},\
+    "submissionTimestamp": "2020-07-09T16:09:06.233054+00:00",\
+    "subscriptionId": "e5638e24-f911-490e-bed6-50993a9e0d36",\
+    "tenantId": "11b1eccb-02fa-40dd-a055-b55a5836a977"\
+  \},\
+  \{\
+    "authorization": \{\
+      "action": "Microsoft.Resources/deployments/validate/action",\
+      "role": null,\
+      "scope": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq"\
+    \},\
+    "caller": "assekagiri@uvri.go.ug",\
+    "category": \{\
+      "localizedValue": "Administrative",\
+      "value": "Administrative"\
+    \},\
+    "channels": "Operation",\
+    "claims": \{\
+      "aio": "AUQAu/8QAAAAgSbNaC/FKJ48t75xQQJem/m+SvsUXin3gxtVsLueqFOFkH3wQwUR2b3JwkiormOCyHG1ME3iJPPjRhcTwW/XLg==",\
+      "altsecid": "1:live.com:000340010D1B0412",\
+      "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",\
+      "appidacr": "2",\
+      "aud": "https://management.core.windows.net/",\
+      "exp": "1594313997",\
+      "groups": "4562bdf9-ab73-4888-ad4f-596eb7500cf4",\
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",\
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd",\
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "live.com",\
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "d6b246f5-23c1-4504-ac46-420bbff96e74",\
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",\
+      "http://schemas.microsoft.com/identity/claims/tenantid": "11b1eccb-02fa-40dd-a055-b55a5836a977",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "assekagiri@uvri.go.ug",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alfred",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "live.com#assekagiri@uvri.go.ug",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "s-zTtz72VaP7QbfAMcVYUWmByCBMrCVRc1X8d6LYTno",\
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Ssekagiri",\
+      "iat": "1594310097",\
+      "ipaddr": "154.226.38.28",\
+      "iss": "https://sts.windows.net/11b1eccb-02fa-40dd-a055-b55a5836a977/",\
+      "name": "Alfred Ssekagiri",\
+      "nbf": "1594310097",\
+      "puid": "10032000CB6502F3",\
+      "uti": "HhmYS78ww0OuNR7pv_AJAQ",\
+      "ver": "1.0",\
+      "wids": "62e90394-69f5-4237-9190-012177145e10"\
+    \},\
+    "correlationId": "944847c6-d287-4850-a5e8-9ac390ef920f",\
+    "description": "",\
+    "eventDataId": "9bd4d1a0-9d40-4f47-a876-80a685bcf0eb",\
+    "eventName": \{\
+      "localizedValue": "Begin request",\
+      "value": "BeginRequest"\
+    \},\
+    "eventTimestamp": "2020-07-09T16:07:25.198591+00:00",\
+    "httpRequest": \{\
+      "clientIpAddress": "23.97.196.161",\
+      "clientRequestId": "372a4ea8-c1fe-11ea-8a20-0a580af4b908",\
+      "method": "POST",\
+      "uri": null\
+    \},\
+    "id": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq/events/9bd4d1a0-9d40-4f47-a876-80a685bcf0eb/ticks/637299076451985912",\
+    "level": "Informational",\
+    "operationId": "944847c6-d287-4850-a5e8-9ac390ef920f",\
+    "operationName": \{\
+      "localizedValue": "Validate Deployment",\
+      "value": "Microsoft.Resources/deployments/validate/action"\
+    \},\
+    "properties": \{\
+      "eventCategory": "Administrative"\
+    \},\
+    "resourceGroup": "RNAseq3",\
+    "resourceGroupName": "RNAseq3",\
+    "resourceId": "/subscriptions/e5638e24-f911-490e-bed6-50993a9e0d36/resourcegroups/RNAseq3/providers/Microsoft.Resources/deployments/rnaseq",\
+    "resourceProviderName": \{\
+      "localizedValue": "Microsoft Resources",\
+      "value": "Microsoft.Resources"\
+    \},\
+    "resourceType": \{\
+      "localizedValue": "Microsoft.Resources/deployments",\
+      "value": "Microsoft.Resources/deployments"\
+    \},\
+    "status": \{\
+      "localizedValue": "Started",\
+      "value": "Started"\
+    \},\
+    "subStatus": \{\
+      "localizedValue": "",\
+      "value": ""\
+    \},\
+    "submissionTimestamp": "2020-07-09T16:09:06.233054+00:00",\
+    "subscriptionId": "e5638e24-f911-490e-bed6-50993a9e0d36",\
+    "tenantId": "11b1eccb-02fa-40dd-a055-b55a5836a977"\
+  \}\
+]}
