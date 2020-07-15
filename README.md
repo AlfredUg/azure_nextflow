@@ -77,10 +77,16 @@ applicable law.
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 ```
-The VM works fine and we can ably log into it, so now we deploy nextflow using the nextflow-azure deployment template; <https://github.com/grbot/azure-quickstart-templates/blob/master/nextflow-genomics-cluster-ubuntu/azuredeploy.json>
 
-Before that, the template requires that we supply the DNS label, admin username and admin password or key. So we configure the DNS of the VM created above on azure portal ahead of deployment.
+Before deployment, the template requires that we supply the DNS label, admin username and admin password or key. So we configure the DNS of the VM created above on azure portal ahead of deployment.
+
+![alt text](https://github.com/AlfredUg/azure_nextflow/blob/master/DNS_Configuration.png)
+
+
+Deploy nextflow using the nextflow-azure deployment template; <https://github.com/grbot/azure-quickstart-templates/blob/master/nextflow-genomics-cluster-ubuntu/azuredeploy.json>
 
 `az deployment group create --name rnaseq --resource-group RNAseq --template-file azuredeploy.json`
 
 Currently, the deployment runs and fails halfway with a quota exceeded error and this what we trying to resolve now.
+
+![alt text](https://github.com/AlfredUg/azure_nextflow/blob/master/quota_exceeded_error.png)
