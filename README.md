@@ -1,4 +1,4 @@
-# Testing Nextflow on Azure
+# Testing RNAseq Nextflow pipeline on Azure
 
 ## Setting up Azure to run nextflow
 
@@ -6,7 +6,7 @@ Create a resource group `RNAseq` in the location `East US`.
 
 `az group create --location eastus --name RNAseq`
 
-Create a Ubuntu LTS virtual machine in the `RNAseq` resource group and generate a pair os sss of keys.
+Create a Ubuntu LTS virtual machine in the `RNAseq` resource group and generate a pair of ssh of keys.
 
 `az vm create -n RNAseqVM -g RNAseq --image UbuntuLTS --generate-ssh-keys`
 
