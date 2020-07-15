@@ -10,7 +10,7 @@ Create a Ubuntu LTS virtual machine in the `RNAseq` resource group and generate 
 
 `az vm create -n RNAseqVM -g RNAseq --image UbuntuLTS --generate-ssh-keys`
 
-Deploy nextflow using the nextflow-azure deployment template (indicated here as azuredeploy.json)
+Deploy nextflow using the nextflow-azure deployment template; <https://github.com/grbot/azure-quickstart-templates/blob/master/nextflow-genomics-cluster-ubuntu/azuredeploy.json>
 
 `az deployment group create --name rnaseq --resource-group RNAseq --template-file azuredeploy.json`
 
