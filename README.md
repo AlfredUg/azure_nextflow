@@ -78,7 +78,7 @@ To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 ```
 
-Before deployment, the template requires that we supply the DNS label, admin username and admin password or key. So we configure the DNS of the VM created above on azure portal ahead of deployment.
+Before deployment, the template requires that we supply the DNS label, admin username and admin password or key. So we configure the DNS of the VM created above on azure portal ahead of deployment. In this case, we set the DNS label to 'rnaseqazure'.
 
 ![alt text](https://github.com/AlfredUg/azure_nextflow/blob/master/DNS_Configuration.png)
 
