@@ -14,4 +14,9 @@ Deploy nextflow using the nextflow-azure deployment template; <https://github.co
 
 `az deployment group create --name rnaseq --resource-group RNAseq --template-file azuredeploy.json`
 
+Currently, the deployment runs and fails halfway with a quota exceeded error and this what we trying to resolve now.
+
+![alt text](https://github.com/AlfredUg/azure_nextflow/blob/master/deployment_error.png)
+
+
 ## Running the RNAseq Nextflow pipeline on Azure
